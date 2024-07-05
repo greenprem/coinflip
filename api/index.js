@@ -121,7 +121,7 @@ app.get('/games', verifyJWT, (req, res) => {
 
 const CLIENT_ID = '1050273183264596456';
 const CLIENT_SECRET = 'RBX-lPnNr8aLJkuZuVuxquZLa3hBipRfYTShdPX8GvrmtbstXy89644vhlC3_5XyTvXW';
-const REDIRECT_URI = 'http://localhost:3000/auth/roblox/callback';
+const REDIRECT_URI = 'https://coinflip-mu-vert.vercel.app/auth/roblox/callback';
 
 var inputName;
 // Endpoint to redirect user for Roblox OAuth
