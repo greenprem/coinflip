@@ -219,7 +219,7 @@ createGameBtn.addEventListener('click', function() {
     const url = '/games';
     const headers = {
         'Content-Type': 'application/json',
-        'Authorization': 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjoiNjIwNzA5MDUwOSIsInVzZXJuYW1lIjoiZ2Vvcmdlbm9yd2FsZCIsImlhdCI6MTcyMDE3NzA3NCwiZXhwIjoxNzIwMTgwNjc0fQ.KpEawP0W_4RDeJB4WKcYHn2SC2q7TRggV0RjiaoGFIY'
+        'Authorization': localStorage.getItem('authToken')
     };
     const body = JSON.stringify({
         "created_by": localStorage.getItem('username'),
