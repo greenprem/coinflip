@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Casino</title>
+    <link rel="stylesheet" href="/css/styles.css">
+</head>
+<body>
+    <header>
+        <div class="logo">ME | Casino</div>
+        <nav>
+            <a href="#" id="home">Home</a>
+            <a href="#" id="withdraw">Withdraw</a>
+            <a href="#" id="faq">FAQ</a>
+            <a href="#" id="terms">Terms of Service</a>
+        </nav>
+        <!-- <div style="display: flex; align-items: center;">
+        <p>$10 </p> <p style="margin-left: 5px;">| georgenorwald</p>
+        <img style="margin-left: 10px;" src="/images/logout.webp" alt="Logout Icon" class="logout-icon">
+        </div> -->
+        <button class="login-btn">Login</button>
+        <div id="login-popup" class="popup hidden">
+            <div class="popup-content">
+              <h1>Welcome</h1>
+                <p>Are you ready to have fun playing and a chance to win Robux and Limiteds?</p>
+                <p>Let's get you started!</p><br><br>
+                <p id="userinput">Enter Username</p>
+              <input type="text" id="username" placeholder="Type your Roblox Username Here">
+              <button id="next-btn">Authorize !</button>
+            </div>
+          </div>
+    </header>
+    <div class="container">
+        <aside class="sidebar">
+            <ul>
+                <li class="sidebar-item active">Coinflip</li>
+            </ul>
+        </aside>
+        <main>
+            <!-- <h1 id="logoutmsg"> Please login to join and create games.</h1> -->
+            <div class="coinflip-header">
+                <h2>Coinflip</h2>
+                <div class="stats">
+                    <span>$18 TOTAL VALUE</span>
+                    <span>8 GAMES</span>
+                    <span>8 JOINABLE</span>
+                </div>
+                <div class="controls">
+                    <p>$</p>
+                    <input id="gamevalue" type="number" value="1">
+                    <button id="halfer" >1/2</button>
+                    <button id="doubler" >2x</button>
+                    <button>Max</button>
+                    
+                    <button class="create-game-btn">Create Game</button>
+                </div>
+            </div>
+            <div class="games-list">
+                
+                
+            </div>
+        </main>
+        <aside class="chat">
+            
+            <div class="chat-messages" id="chat-messages">
+                <div class="chat-shadow-top"></div>
+                <div class="chat-message"><p id="username">swiftswaps :</p><p id="message">yo, what sup</p></div>
+                <div class="chat-message"><p id="username">swiftswaps :</p><p id="message">yo, what sup</p></div>
+                <!-- MORE MESSAGES -->
+                
+            </div>
+            
+            <input id="chat-input" type="text" placeholder="Send a message...">
+        </aside>
+    </div>
+<script src="/js/index.js"></script>
+</body>
+</html>
