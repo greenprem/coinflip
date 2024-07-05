@@ -1,6 +1,6 @@
 async function setSession() {
   try {
-    const response = await fetch('http://localhost:3000/verify?username='+localStorage.getItem('username'), {
+    const response = await fetch('/verify?username='+localStorage.getItem('username'), {
       method: 'POST',
       headers: {
         'Content-Type': 'application/json',
@@ -72,7 +72,7 @@ async function replaceLoginButton(cookie) {
 
 async function getGames(){
 
-  const gamesData = await fetch('http://localhost:3000/games', {
+  const gamesData = await fetch('/games', {
     headers: {
       'Content-Type': 'multipart/form-data',
       'User-Agent': 'insomnia/8.6.1',
