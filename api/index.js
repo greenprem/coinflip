@@ -8,7 +8,7 @@ const { MongoClient } = require('mongodb');
 const app = express();
 const PORT = process.env.PORT || 3000;
 const SECRET_KEY = 'greeenprem';
-const MONGO_URI = 'mongodb://localhost:27017/'; // Replace with your MongoDB URI
+const MONGO_URI = 'mongodb+srv://prakash34we1:gauzer7612@cluster0.lvigvny.mongodb.net/mydatabase/?retryWrites=true&w=majority&appName=Cluster0'; // Replace with your MongoDB URI
 const DB_NAME = 'coinflip';
 const COLLECTION_NAME = 'games';
 
