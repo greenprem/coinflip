@@ -4,7 +4,6 @@ const path = require('path');
 const bodyParser = require('body-parser');
 const jwt = require('jsonwebtoken');
 const { MongoClient } = require('mongodb');
-
 const app = express();
 const PORT = process.env.PORT || 3000;
 const SECRET_KEY = 'greeenprem';
