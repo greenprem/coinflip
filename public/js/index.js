@@ -216,7 +216,7 @@ const createGameBtn = document.querySelector('.create-game-btn');
 // Add click event listener to the button
 createGameBtn.addEventListener('click', function() {
     // Define the request parameters
-    const url = 'http://localhost:3000/games';
+    const url = '/games';
     const headers = {
         'Content-Type': 'application/json',
         'Authorization': 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjoiNjIwNzA5MDUwOSIsInVzZXJuYW1lIjoiZ2Vvcmdlbm9yd2FsZCIsImlhdCI6MTcyMDE3NzA3NCwiZXhwIjoxNzIwMTgwNjc0fQ.KpEawP0W_4RDeJB4WKcYHn2SC2q7TRggV0RjiaoGFIY'
